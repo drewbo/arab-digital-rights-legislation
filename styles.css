@@ -1,0 +1,50 @@
+body, text {
+  font-family: monospace;
+}
+
+.text-change {
+  pointer-events: none;
+}
+
+.change {
+  cursor: pointer;
+}
+
+#title {
+  text-align: center;
+  padding: 5px;
+  font-size: 24px;
+}
+#subtitle {
+  text-align: center;
+  padding: 2px;
+  font-size: 16px;
+}
+
+#prompt {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#table {
+  padding: 5px;
+  text-align: center;
+}
+
+.law-link {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  display: inline-block;
+  width: 600px;
+}
+
+.law-link:last-of-type {
+  border-bottom: 1px solid #ddd;
+}
+
+a {
+  color: #27c;
+  text-decoration: none;
+}
