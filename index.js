@@ -80,9 +80,10 @@ d3.csv('data/adr.csv', function(error, data) {
           d3.select('#prompt').remove();
           d3.select('#table').selectAll('*').remove();
           d.info.forEach(function (dd) {
-            d3.select('#table').append('div')
+            var div = d3.select('#table').append('div')
             .attr('class','law-link')
-            .append('a')
+
+            div.append('a')
             .attr('href', dd['Original Law'])
             .attr('target','_blank')
             .html(function () {
@@ -90,6 +91,14 @@ d3.csv('data/adr.csv', function(error, data) {
               dd['Most Recent Amendment'] + ')' : '';
               return dd['Country'] + ': ' + (dd['Law Name'] || 'Unnamed') +
               ' ' + dd['Promulgated'] + amend;
+            });
+
+            div.append('a')
+            .attr('href', dd['Translation'])
+            .attr('target','_blank')
+            .html(function(){
+               return (dd['Translation Available'] === 'Yes') ?
+              'Translation' : 'Help find this translation';
             });
           });
         })

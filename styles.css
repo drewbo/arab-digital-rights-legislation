@@ -44,7 +44,15 @@ body, text {
   border-bottom: 1px solid #ddd;
 }
 
+.law-link a:last-of-type {
+  margin-left: 20px;
+}
+
 a {
   color: #27c;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
