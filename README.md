@@ -1,2 +1,2 @@
 # arab-digital-rights-legislation
-Visualization using data made available by SMEX
+Visualization using [data](http://smex.silk.co/) made available by [SMEX](http://www.smex.org/)
